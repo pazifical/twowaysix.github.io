@@ -3,14 +3,71 @@
   padding: 0;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: black;
-  color: white;
+li {
+  margin-left: 1rem;
 }
 
-main {
-  width: 1200px;
+/* * {
+  border: 1px solid red;
+} */
+
+:root {
+  --width: 1200px;
+  --bright: rgb(244 244 244);
+  --blue1: #0065ff;
+  --blue2: #054fb1;
+  --blue3: #071d96;
+  --blue4: #090979;
+  --dark: rgb(21 21 21);
+  --sand: hsl(54, 100%, 75%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark);
+  color: var(--bright);
+}
+
+nav {
+  max-width: var(--width);
+  margin: auto;
+  line-height: 1.4rem;
+}
+
+.container {
+  width: var(--width);
   margin: auto;
 }
 
+aside {
+  flex-basis: 33%;
+}
+
+.depth-1 {
+  background: linear-gradient(to bottom, var(--blue1), var(--blue2));
+}
+
+.depth-2 {
+  background: linear-gradient(to bottom, var(--blue2), var(--blue3));
+}
+
+.depth-3 {
+  background: linear-gradient(to bottom, var(--blue3), var(--blue4));
+}
+
+.depth-4 {
+  background: linear-gradient(to bottom, var(--blue4), var(--dark));
+}
+
+.footer {
+  color: var(--dark);
+  background-color: var(--sand);
+}
+
+article {
+  padding: 1rem 0;
+}
+
+.title {
+  color: var(--sand);
+}
