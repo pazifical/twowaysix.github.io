@@ -28,6 +28,12 @@ body {
   color: var(--bright);
 }
 
+p {
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 nav {
   max-width: var(--width);
   margin: auto;
@@ -35,7 +41,7 @@ nav {
 }
 
 .container {
-  width: var(--width);
+  max-width: var(--width);
   margin: auto;
 }
 
