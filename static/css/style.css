@@ -79,3 +79,79 @@ article {
 .title {
   color: var(--moon);
 }
+
+.moon {
+  position: fixed;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  right: 10%;
+}
+
+.info-box {
+  width: 50%;
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  .moon {
+    right: 0;
+    width: 100%;
+  }
+
+  .info-box {
+    width: 100%
+  }
+}
+
+
+
+
+.ocean {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wave {
+  background: url(/static/img/wave.svg) repeat-x;
+  position: absolute;
+  bottom: 0px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+  fill: yellow;
+}
+
+.wave:nth-of-type(2) {
+  bottom: 10px;
+  animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 15s ease -1.25s infinite;
+  opacity: 0.7;
+}
+
+
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
