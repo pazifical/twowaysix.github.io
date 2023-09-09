@@ -11,6 +11,10 @@ li {
   border: 1px solid red;
 } */
 
+p {
+  margin: 1rem 0;
+}
+
 :root {
   --width: 1200px;
   --bright: rgb(244 244 244);
@@ -68,8 +72,8 @@ aside {
 }
 
 .footer {
-  color: var(--dark);
-  background-color: var(--sand);
+  color: var(--moon);
+  background-color: var(--dark);
 }
 
 article {
@@ -91,6 +95,8 @@ article {
 .info-box {
   width: 50%;
   margin-left: 0;
+  border-left: 2px solid var(--moon);
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
