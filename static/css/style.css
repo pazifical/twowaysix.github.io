@@ -15,6 +15,7 @@ p {
   margin: 1rem 0;
 }
 
+
 :root {
   --width: 1200px;
   --bright: rgb(244 244 244);
@@ -46,10 +47,16 @@ nav {
   padding: 1rem 0;
 }
 
+.mix {
+  mix-blend-mode: exclusion;
+  z-index: 10;
+}
+
 .container {
   max-width: var(--width);
   margin: auto;
 }
+
 
 aside {
   flex-basis: 33%;
@@ -95,7 +102,7 @@ article {
 .info-box {
   width: 50%;
   margin-left: 0;
-  border-left: 2px solid var(--moon);
+  border-left: 4px solid var(--moon);
   padding: 1rem;
 }
 
